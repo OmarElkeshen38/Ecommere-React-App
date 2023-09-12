@@ -1,0 +1,64 @@
+.home {
+    background-color: #131722;
+    background-image: url(../../images/bgimg.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 88vh;
+}
+
+.bgLayer {
+    background-color: #000000d2;
+    width: 100%;
+    height: 88vh;
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.headerContent h1 {
+    font-size: 55px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.carouselPrev {
+    background-color: rgba(0, 0, 0, 0.767);
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 22px 7px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.carouselNext {
+    background-color: rgba(0, 0, 0, 0.767);
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 22px 7px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+@media (max-width:450px) {
+    .headerContent h1 {
+        font-size: 47px;
+    }
+}
+
+@media (max-width:450px) {
+    .headerContent h1 {
+        font-size: 40px;
+    }
+}

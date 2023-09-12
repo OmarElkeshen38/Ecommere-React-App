@@ -1,0 +1,17 @@
+
+.cateCart {
+    background-color: #1e2433;
+    border-radius: 8px;
+    cursor: pointer;
+    height: fit-content;
+}
+
+.cateCart img {
+    border-radius: 8px;
+    transform: scale(1);
+    transition: all 0.4s;
+}
+
+.cateCart img:hover {
+    transform: scale(1.06);
+}
