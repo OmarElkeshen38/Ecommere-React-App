@@ -10,7 +10,7 @@ function Subtitle(props) {
           <div></div>
           <span></span>
         </div>
-        <div className="d-flex justify-content-between text-white py-3">
+        <div className="d-flex justify-content-between align-items-center text-white py-3">
           <h2 className="fs-1">{props.catig}</h2>
           <a href={props.link} className={`${styles.btnColor} btn btn-Color fs-3 py-1 px-4`}>مشاهده الكل</a>
         </div>

@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Header.module.css';
-import slideItem1 from '../../images/slideItem1.png';
-import slideItem2 from '../../images/slideItem2.jpg';
-import slideItem4 from '../../images/slideItem4.jpg';
+import slideItem1 from '../../../images/slideItem1.png';
+import slideItem2 from '../../../images/slideItem2.jpg';
+import slideItem4 from '../../../images/slideItem4.jpg';
 
 function Header() {
   return (

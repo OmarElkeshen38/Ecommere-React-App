@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import styles from './Categories.module.css';
-import catigory1 from '../../images/catigory1.jpg';
-import catigory2 from '../../images/catigory2.jpg';
-import catigory3 from '../../images/slideItem1.png';
-import catigory4 from '../../images/catigory5.jpg';
-import Subtitle from '../Subtitle/Subtitle';
+import catigory1 from '../../../images/catigory1.jpg';
+import catigory2 from '../../../images/catigory2.jpg';
+import catigory3 from '../../../images/slideItem1.png';
+import catigory4 from '../../../images/catigory5.jpg';
+import Subtitle from '../../HomepageComponents/Subtitle/Subtitle';
 
 function Categories() {
     const [index, setIndex] = useState(0);
