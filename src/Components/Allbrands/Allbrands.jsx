@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import styles from './BrandsCointer.module.css';
-import Subtitle from '../Subtitle/Subtitle';
-import NikeLogo from '../../../images/nike-logo.jpg';
-import DefactoLogo from '../../../images/defacto-logo.jpg';
+import styles from "./Allbrands.module.css";
+import NikeLogo from "../../images/nike-logo.jpg";
+import DefactoLogo from "../../images/defacto-logo.jpg";
 
-function BrandsCointer() {
+function Allbrands() {
 
     const [brands, setBrands] = useState([
         { id: '0', title: 'NIKE', img: NikeLogo, desc:'شاهد كل منتجات NIKE' },
@@ -13,17 +12,17 @@ function BrandsCointer() {
         { id: '3', title: 'Defacto', img: DefactoLogo, desc:'شاهد كل منتجات Defacto' },
         { id: '4', title: 'NIKE', img: NikeLogo, desc:'شاهد كل منتجات NIKE' },
         { id: '5', title: 'Defacto', img: DefactoLogo, desc:'شاهد كل منتجات Defacto' },
+        { id: '6', title: 'NIKE', img: NikeLogo, desc:'شاهد كل منتجات NIKE' },
+        { id: '7', title: 'Defacto', img: DefactoLogo, desc:'شاهد كل منتجات Defacto' },
     ]);
-
-    let homeBrands = brands.slice(0, 4);
-
+    
   return (
     <>
       <div className="container">
         <div className="my-5">
-          <Subtitle catig="أشهر الماركات" link="allBrands" />
           <div className="row">
-            {homeBrands.map((brand) => (
+            <h2 className="fs-1 text-white">كل الماركات</h2>
+            {brands.map((brand) => (
               <div key={brand.id} className="col-lg-3 my-2 col-md-6">
                 <div className={`${styles.branBox} rounded p-4`}>
                   <h3 className="p-2 text-white text-center d-flex align-items-center justify-content-center rounded">
@@ -47,4 +46,4 @@ function BrandsCointer() {
   );
 }
 
-export default BrandsCointer
+export default Allbrands
