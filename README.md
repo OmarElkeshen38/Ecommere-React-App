@@ -4,7 +4,10 @@ This eCommerce website project aims to provide users with a seamless and enjoyab
 
 
 I finished creating the HomePage.
-You can see it now and I'm working on the rest of the project
+
+Today, I Created the AllCategories, AllBrands, and AllProducts pages.
+
+I'm working on the rest of the project.
 
 
 
@@ -12,8 +15,3 @@ You can see it now and I'm working on the rest of the project
 
 
 
-
-
-
-
-GitHub: OmarElkeshen38
