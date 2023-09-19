@@ -22,9 +22,8 @@ function Allcategories() {
 
   return (
     <>
-      <div className="container my-5">
+      <div className="container">
         <div className="row">
-          <h2 className='fs-1 text-white'>كل التصنيفات</h2>
           {categories.map((categorie, index) => (
             <div key={index} className="col-md-6 col-lg-3">
               <div className={`p-3 my-3 ${styles.cateCart}`}>

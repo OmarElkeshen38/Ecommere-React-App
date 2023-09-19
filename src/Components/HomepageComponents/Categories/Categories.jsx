@@ -4,7 +4,8 @@ import catigory1 from '../../../images/catigory1.jpg';
 import catigory2 from '../../../images/catigory2.jpg';
 import catigory3 from '../../../images/slideItem1.png';
 import catigory4 from '../../../images/catigory5.jpg';
-import Subtitle from '../../HomepageComponents/Subtitle/Subtitle';
+import Subtitle from "../../Utilities/Subtitle/Subtitle";
+import Lines from '../../Utilities/Lines/Lines';
 
 function Categories() {
     const [index, setIndex] = useState(0);
@@ -25,7 +26,8 @@ function Categories() {
   return (
     <>
         <div className="container my-5">
-            <Subtitle catig='التصنيفات' link='/allCategories' />
+            <Lines />
+            <Subtitle catig='التصنيفات' link='/all-categories' btnName='مشاهدة الكل' />
             <div className="row">
                   {cate.map((categorie, index) => (
                     <div key={index} className="col-md-6 col-lg-3">

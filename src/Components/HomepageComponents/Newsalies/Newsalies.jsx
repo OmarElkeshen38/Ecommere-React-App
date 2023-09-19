@@ -4,7 +4,8 @@ import catigory1 from '../../../images/catigory1.jpg';
 import catigory2 from '../../../images/catigory2.jpg';
 import catigory3 from '../../../images/slideItem1.png';
 import catigory4 from '../../../images/catigory5.jpg';
-import Subtitle from '../../HomepageComponents/Subtitle/Subtitle';
+import Subtitle from "../../Utilities/Subtitle/Subtitle";
+import Lines from '../../Utilities/Lines/Lines';
 
 function Newsalies() {
 
@@ -23,7 +24,8 @@ function Newsalies() {
     <>
       <div className="container">
         <div className="my-5">
-          <Subtitle catig='أحدث الأذياء' link='AllProducts' />
+          <Lines />
+          <Subtitle catig='أحدث الأذياء' link='/all-products' btnName='مشاهدة الكل' />
           <div className="row">
             {homeProduct.map((product) => (
               <div className="col-lg-3 col-md-6 p-2">

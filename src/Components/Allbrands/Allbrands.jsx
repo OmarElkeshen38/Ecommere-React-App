@@ -19,27 +19,24 @@ function Allbrands() {
   return (
     <>
       <div className="container">
-        <div className="my-5">
-          <div className="row">
-            <h2 className="fs-1 text-white">كل الماركات</h2>
-            {brands.map((brand) => (
-              <div key={brand.id} className="col-lg-3 my-2 col-md-6">
-                <div className={`${styles.branBox} rounded p-4`}>
-                  <h3 className="p-2 text-white text-center d-flex align-items-center justify-content-center rounded">
-                    {brand.desc}
-                  </h3>
-                  <div className={styles.img}>
-                    <img
-                      className="w-100 rounded-circle object-fit-cover"
-                      src={brand.img}
-                      alt="brand image"
-                    />
-                  </div>
-                  <h2 className="text-center text-white mt-4">{brand.title}</h2>
+        <div className="row">
+          {brands.map((brand) => (
+            <div key={brand.id} className="col-lg-3 my-2 col-md-6">
+              <div className={`${styles.branBox} rounded p-4`}>
+                <h3 className="p-2 text-white text-center d-flex align-items-center justify-content-center rounded">
+                  {brand.desc}
+                </h3>
+                <div className={styles.img}>
+                  <img
+                    className="w-100 rounded-circle object-fit-cover"
+                    src={brand.img}
+                    alt="brand image"
+                  />
                 </div>
+                <h2 className="text-center text-white mt-4">{brand.title}</h2>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </>

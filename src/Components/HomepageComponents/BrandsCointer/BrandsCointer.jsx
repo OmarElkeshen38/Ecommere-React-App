@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import styles from './BrandsCointer.module.css';
-import Subtitle from '../Subtitle/Subtitle';
+import Subtitle from '../../Utilities/Subtitle/Subtitle';
 import NikeLogo from '../../../images/nike-logo.jpg';
 import DefactoLogo from '../../../images/defacto-logo.jpg';
+import Lines from '../../Utilities/Lines/Lines';
 
 function BrandsCointer() {
 
@@ -21,7 +22,8 @@ function BrandsCointer() {
     <>
       <div className="container">
         <div className="my-5">
-          <Subtitle catig="أشهر الماركات" link="allBrands" />
+          <Lines />
+          <Subtitle catig="أشهر الماركات" link="/all-brands" btnName='مشاهدة الكل' />
           <div className="row">
             {homeBrands.map((brand) => (
               <div key={brand.id} className="col-lg-3 my-2 col-md-6">

@@ -1,0 +1,12 @@
+
+.btnColor {
+    background-color: transparent !important;
+    color: #fff !important;
+    border: 2px solid #1E799D !important;
+    transition: all .03s;
+}
+.btnColor:hover {
+    background-color: #1E799D !important;
+    color: #fff !important;
+}
+

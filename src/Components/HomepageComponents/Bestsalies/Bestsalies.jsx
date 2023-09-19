@@ -4,7 +4,9 @@ import catigory1 from '../../../images/catigory1.jpg';
 import catigory2 from '../../../images/catigory2.jpg';
 import catigory3 from '../../../images/slideItem1.png';
 import catigory4 from '../../../images/catigory5.jpg';
-import Subtitle from '../../HomepageComponents/Subtitle/Subtitle';
+import Subtitle from '../../Utilities/Subtitle/Subtitle';
+import Lines from '../../Utilities/Lines/Lines';
+import { useNavigate } from 'react-router-dom';
 
 function Bestsalies() {
 
@@ -19,20 +21,27 @@ function Bestsalies() {
 
   let homeProduct = products.slice(0, 4);
 
+  const navigate = useNavigate();
+  function goToProduct() {
+    navigate("/product");
+  }
+
+
   return (
     <>
       <div className="container">
         <div className="my-5">
-          <Subtitle catig='الأكثر مبيعا' link='AllProducts' />
+          <Lines />
+          <Subtitle catig='الأكثر مبيعا' link='/all-products' btnName='مشاهدة الكل' />
           <div className="row">
-            {homeProduct.map((product) => (
+            {homeProduct.map((product, index) => (
               <div className="col-lg-3 col-md-6 p-2">
-                <div key={product.index} className={`p-3 ${styles.product}`}>
+                <div key={index} className={`p-3 ${styles.product}`}>
                   <img className='w-100' src={product.img} alt="product image" />
                   <div className="my-3">
                     <h3 className="fs-4">{product.categ}</h3>
                     <div className="d-flex justify-content-between align-items-center">
-                      <h2>{product.title}</h2>
+                      <h2 onClick={goToProduct}>{product.title}</h2>
                       <i className={`${styles.cartIcon} fa-solid fa-bag-shopping fs-5`}></i>
                     </div>
                   </div>
