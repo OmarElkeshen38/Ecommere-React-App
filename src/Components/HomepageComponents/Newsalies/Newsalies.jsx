@@ -6,6 +6,7 @@ import catigory3 from '../../../images/slideItem1.png';
 import catigory4 from '../../../images/catigory5.jpg';
 import Subtitle from "../../Utilities/Subtitle/Subtitle";
 import Lines from '../../Utilities/Lines/Lines';
+import { useNavigate } from 'react-router-dom';
 
 function Newsalies() {
 
@@ -20,6 +21,11 @@ function Newsalies() {
   
   let homeProduct = products.slice(0, 4);
 
+  const navigate = useNavigate();
+  function goToProduct() {
+    navigate("/product");
+  }
+
   return (
     <>
       <div className="container">
@@ -28,7 +34,7 @@ function Newsalies() {
           <Subtitle catig='أحدث الأذياء' link='/all-products' btnName='مشاهدة الكل' />
           <div className="row">
             {homeProduct.map((product) => (
-              <div className="col-lg-3 col-md-6 p-2">
+              <div onClick={goToProduct} className="col-lg-3 col-md-6 p-2">
                 <div key={product.index} className={`p-3 ${styles.product}`}>
                   <img className='w-100' src={product.img} alt="" />
                   <div className="my-3">

@@ -6,3 +6,7 @@ This E-Commerce website project aims to provide users with a seamless and enjoya
 
 
 I'm working on the rest of the project.
+
+
+
+I finished all Registration Components and Cart Component.

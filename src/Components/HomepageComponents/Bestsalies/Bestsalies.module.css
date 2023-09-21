@@ -3,6 +3,7 @@
     border-radius: 8px;
     height: fit-content;
     color: #fff;
+    cursor: pointer;
 }
 
 .product img {

@@ -35,13 +35,13 @@ function Bestsalies() {
           <Subtitle catig='الأكثر مبيعا' link='/all-products' btnName='مشاهدة الكل' />
           <div className="row">
             {homeProduct.map((product, index) => (
-              <div className="col-lg-3 col-md-6 p-2">
+              <div onClick={goToProduct} className="col-lg-3 col-md-6 p-2">
                 <div key={index} className={`p-3 ${styles.product}`}>
                   <img className='w-100' src={product.img} alt="product image" />
                   <div className="my-3">
                     <h3 className="fs-4">{product.categ}</h3>
                     <div className="d-flex justify-content-between align-items-center">
-                      <h2 onClick={goToProduct}>{product.title}</h2>
+                      <h2>{product.title}</h2>
                       <i className={`${styles.cartIcon} fa-solid fa-bag-shopping fs-5`}></i>
                     </div>
                   </div>

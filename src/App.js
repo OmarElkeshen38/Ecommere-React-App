@@ -10,6 +10,11 @@ import AllBrandsPage from "./Pages/AllBrandsPage/AllBrandsPage";
 import ProductPage from "./Pages/ProductPage/ProductPage";
 import LoginPage from "./Pages/LoginPage/LoginPage";
 import RegisterPage from "./Pages/RegisterPage/RegisterPage";
+import ResetPassPage from "./Pages/ResetPassPage/ResetPassPage";
+import ChangePassPage from "./Pages/ChangePassPage/ChangePassPage";
+import VerificationCodePage from "./Pages/VerificationCodePage/VerificationCodePage";
+import CartPage from "./Pages/CartPage/CartPage";
+import PaymentPage from "./Pages/PaymentPage/PaymentPage";
 
 function App() {
   return (
@@ -24,6 +29,11 @@ function App() {
         <Route path="/product" element={<ProductPage />}></Route>
         <Route path="/Login" element={<LoginPage />}></Route>
         <Route path="/register" element={<RegisterPage />}></Route>
+        <Route path="/cart" element={<CartPage />}></Route>
+        <Route path="/reset-pass" element={<ResetPassPage />}></Route>
+        <Route path="/Verification-code" element={<VerificationCodePage />}></Route>
+        <Route path="/new-pass" element={<ChangePassPage />}></Route>
+        <Route path="/payment" element={<PaymentPage />}></Route>
         <Route path="*" element={<Notdefine />}></Route>
       </Routes>
       <Footer />
