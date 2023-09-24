@@ -1,8 +1,9 @@
 import React from 'react';
-import styles from './Login.module.css';
-import { Link, useNavigate } from 'react-router-dom';
+import styles from "./Login.module.css";
+import { Link, useNavigate } from "react-router-dom";
 
-function Login() {
+
+function LoginPage() {
 
   const navigate = useNavigate();
   function goToLogin() {
@@ -33,4 +34,4 @@ function Login() {
   )
 }
 
-export default Login
+export default LoginPage

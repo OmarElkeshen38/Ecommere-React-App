@@ -1,17 +1,17 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import styles from './ResetPass.module.css';
+import { Link, useNavigate } from "react-router-dom";
+import styles from "./ResetPass.module.css";
 
-function ResetPass() {
+function ResetPassPage() {
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
     function goToVerification() {
         navigate("/Verification-code");
     }
 
   return (
     <>
-        <div className="container">
+      <div className="container">
             <div className={`${styles.log} d-flex align-items-center justify-content-center`}>
                 <div className="w-75">
                     <h2 className='text-white text-center'>نسيت كلمة السر</h2>
@@ -31,4 +31,4 @@ function ResetPass() {
   )
 }
 
-export default ResetPass
+export default ResetPassPage

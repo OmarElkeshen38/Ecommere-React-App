@@ -1,8 +1,9 @@
 import React from 'react';
-import styles from './Register.module.css';
-import { Link } from 'react-router-dom';
+import styles from "./Register.module.css";
+import { Link } from "react-router-dom";
 
-function Register() {
+
+function RegisterPage() {
   return (
     <>
       <div className="container">
@@ -27,4 +28,4 @@ function Register() {
   )
 }
 
-export default Register
+export default RegisterPage

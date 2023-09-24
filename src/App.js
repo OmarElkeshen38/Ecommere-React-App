@@ -8,13 +8,13 @@ import AllCategoriesPage from "./Pages/Allcategoriespage/AllCategoriesPage";
 import AllProductsPage from "./Pages/Allproductspage/AllProductsPage";
 import AllBrandsPage from "./Pages/AllBrandsPage/AllBrandsPage";
 import ProductPage from "./Pages/ProductPage/ProductPage";
-import LoginPage from "./Pages/LoginPage/LoginPage";
-import RegisterPage from "./Pages/RegisterPage/RegisterPage";
-import ResetPassPage from "./Pages/ResetPassPage/ResetPassPage";
-import ChangePassPage from "./Pages/ChangePassPage/ChangePassPage";
-import VerificationCodePage from "./Pages/VerificationCodePage/VerificationCodePage";
 import CartPage from "./Pages/CartPage/CartPage";
 import PaymentPage from "./Pages/PaymentPage/PaymentPage";
+import ChangePassPage from "./Pages/AuthPages/ChangePassPage/ChangePassPage";
+import LoginPage from "./Pages/AuthPages/LoginPage/LoginPage";
+import RegisterPage from "./Pages/AuthPages/RegisterPage/RegisterPage";
+import ResetPassPage from "./Pages/AuthPages/ResetPassPage/ResetPassPage";
+import VerificationCodePage from "./Pages/AuthPages/VerificationCodePage/VerificationCodePage";
 
 function App() {
   return (

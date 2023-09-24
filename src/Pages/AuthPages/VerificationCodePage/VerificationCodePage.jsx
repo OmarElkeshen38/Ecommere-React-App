@@ -1,11 +1,10 @@
 import React from 'react';
-import styles from './VerificationCode.module.css';
+import styles from "./VerificationCode.module.css";
 import { Link, useNavigate } from "react-router-dom";
 
+function VerificationCodePage() {
 
-function VerificationCode() {
-
-    const navigate = useNavigate();
+  const navigate = useNavigate();
     function goToChangePass() {
       navigate("/new-pass");
     }
@@ -35,4 +34,4 @@ function VerificationCode() {
   )
 }
 
-export default VerificationCode
+export default VerificationCodePage
