@@ -1,0 +1,43 @@
+.product {
+    background-color: #1e2433;
+    border-radius: 8px;
+    height: fit-content;
+    color: #fff;
+}
+
+.product img {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transform: scale(.9);
+    transition: all 0.4s;
+}
+
+.product img:hover {
+    transform: scale(1);
+}
+
+.product h2 {
+    color: #2bb0e4;
+    cursor: pointer;
+}
+
+.product i {
+    color: yellow;
+}
+
+.cartIcon {
+    border: 1px solid #2bb0e4;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 10px 12px;
+}
+
+.cartIcon:hover {
+    background-color: #2bb0e4;
+    color: #1e2433;
+}
+
+.dropMenu {
+    background-color: #2bb0e4;
+}

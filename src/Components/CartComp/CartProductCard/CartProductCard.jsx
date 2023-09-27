@@ -26,7 +26,7 @@ function CartProductCard() {
                     <div className="row">
                         <div className="col-md-4">
                             <div className="img">
-                                <img className='w-100 rounded-2' src={catigory1} alt="" />
+                                <img className='w-100 rounded-2' src={catigory1} alt="product" />
                             </div>
                         </div>
                         <div className="col-md-8">
@@ -47,11 +47,11 @@ function CartProductCard() {
                         </div>
                     </div>
                     <div className="d-flex flex-column align-items-center justify-content-between">
-                        <h3 className={styles.pointer}>
+                        <h3 className={`${styles.pointer} fs-4`}>
                             <i class="fa-solid fa-trash mx-2 fs-4 text-info"></i>
                             ازالة
                         </h3>
-                        <h3 className='text-info'>
+                        <h3 className='text-info fs-4'>
                             {product.price}
                             <span className='text-white mx-2'>جنية</span>
                         </h3>

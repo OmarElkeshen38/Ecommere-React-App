@@ -15,6 +15,14 @@ import LoginPage from "./Pages/AuthPages/LoginPage/LoginPage";
 import RegisterPage from "./Pages/AuthPages/RegisterPage/RegisterPage";
 import ResetPassPage from "./Pages/AuthPages/ResetPassPage/ResetPassPage";
 import VerificationCodePage from "./Pages/AuthPages/VerificationCodePage/VerificationCodePage";
+import AdminPage from "./Pages/AdminPage/AdminPage";
+import ManageOrders from "./Components/AdminComp/ManageOrders/ManageOrders";
+import ManageProducts from "./Components/AdminComp/ManageProducts/ManageProducts";
+import AddBrand from "./Components/AdminComp/AddBrand/AddBrand";
+import AddCategorie from "./Components/AdminComp/AddCategorie/AddCategorie";
+import AddProduct from "./Components/AdminComp/AddProduct/AddProduct";
+import AddSubCategorie from "./Components/AdminComp/AddSubCategorie/AddSubCategorie";
+import AddCoupon from "./Components/AdminComp/AddCoupon/AddCoupon";
 
 function App() {
   return (
@@ -34,6 +42,16 @@ function App() {
         <Route path="/Verification-code" element={<VerificationCodePage />}></Route>
         <Route path="/new-pass" element={<ChangePassPage />}></Route>
         <Route path="/payment" element={<PaymentPage />}></Route>
+        <Route path="/admin" element={<AdminPage />}>
+          <Route path="" element={<ManageOrders />}></Route>
+          <Route path="orders" element={<ManageOrders />}></Route>
+          <Route path="products" element={<ManageProducts />}></Route>
+          <Route path="add-brand" element={<AddBrand />}></Route>
+          <Route path="add-categorie" element={<AddCategorie />}></Route>
+          <Route path="add-subcategorie" element={<AddSubCategorie />}></Route>
+          <Route path="add-product" element={<AddProduct />}></Route>
+          <Route path="add-coupon" element={<AddCoupon />}></Route>
+        </Route>
         <Route path="*" element={<Notdefine />}></Route>
       </Routes>
       <Footer />
