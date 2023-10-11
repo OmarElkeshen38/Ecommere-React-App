@@ -23,6 +23,11 @@ import AddCategorie from "./Components/AdminComp/AddCategorie/AddCategorie";
 import AddProduct from "./Components/AdminComp/AddProduct/AddProduct";
 import AddSubCategorie from "./Components/AdminComp/AddSubCategorie/AddSubCategorie";
 import AddCoupon from "./Components/AdminComp/AddCoupon/AddCoupon";
+import UserPage from "./Pages/UserPage/UserPage";
+import UserOrders from "./Components/UserComp/UserOrders/UserOrders";
+import FavProducts from "./Components/UserComp/FavProducts/FavProducts";
+import UserAddresses from "./Components/UserComp/UserAddresses/UserAddresses";
+import UserProfile from "./Components/UserComp/UserProfile/UserProfile";
 
 function App() {
   return (
@@ -51,6 +56,13 @@ function App() {
           <Route path="add-subcategorie" element={<AddSubCategorie />}></Route>
           <Route path="add-product" element={<AddProduct />}></Route>
           <Route path="add-coupon" element={<AddCoupon />}></Route>
+        </Route>
+        <Route path="/user" element={<UserPage />}>
+          <Route path="" element={<UserOrders />}></Route>
+          <Route path="user-orders" element={<UserOrders />}></Route>
+          <Route path="fav-products" element={<FavProducts />}></Route>
+          <Route path="user-addresses" element={<UserAddresses />}></Route>
+          <Route path="user-profile" element={<UserProfile />}></Route>
         </Route>
         <Route path="*" element={<Notdefine />}></Route>
       </Routes>

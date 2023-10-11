@@ -30,7 +30,7 @@ function LoginPage() {
           </div>
         </div>
         <Link to={'/admin'} className='btn text-white fs-5'>تسجيل الدخول للأدمن</Link>
-        <Link to={'/home'} className='btn text-white fs-5'>تسجيل الدخول للمستخدم</Link>
+        <Link to={'/user'} className='btn text-white fs-5'>تسجيل الدخول للمستخدم</Link>
       </div>
     </>
   )
