@@ -10,3 +10,4 @@ I'm working on the rest of the project.
 
 
 I finished all Registration Components and Cart Component.
+Created all admin component 27/9
