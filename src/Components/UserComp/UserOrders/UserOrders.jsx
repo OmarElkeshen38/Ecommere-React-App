@@ -33,14 +33,17 @@ function UserOrders() {
                 </div>
               </>
               ))}
-              
             </div>
+          </div>
+          <div className="d-flex justify-content-between">
+            <p className='fs-5'>الحالة : <span className='fs-4 text-info'>قيد التنفيذ</span></p>
+            <p className="fs-5">4000 جنية</p>
           </div>
         </div>
       </div>
       <div className="w-100 my-3 d-flex justify-content-center gap-3">
-        <button className='btn btn-info px-5 fs-5'>السابق</button>
-        <button className='btn btn-info px-5 fs-5'>التالي</button>
+        <button className='btn btn-primary px-5 fs-5'>السابق</button>
+        <button className='btn btn-primary px-5 fs-5'>التالي</button>
       </div>
     </>
   );

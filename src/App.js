@@ -28,6 +28,8 @@ import UserOrders from "./Components/UserComp/UserOrders/UserOrders";
 import FavProducts from "./Components/UserComp/FavProducts/FavProducts";
 import UserAddresses from "./Components/UserComp/UserAddresses/UserAddresses";
 import UserProfile from "./Components/UserComp/UserProfile/UserProfile";
+import EditAddress from "./Components/UserComp/EditAddress/EditAddress";
+import AddAdress from "./Components/UserComp/AddAdress/AddAdress";
 
 function App() {
   return (
@@ -62,6 +64,8 @@ function App() {
           <Route path="user-orders" element={<UserOrders />}></Route>
           <Route path="fav-products" element={<FavProducts />}></Route>
           <Route path="user-addresses" element={<UserAddresses />}></Route>
+          <Route path="edit-address" element={<EditAddress />}></Route>
+          <Route path="add-address" element={<AddAdress />}></Route>
           <Route path="user-profile" element={<UserProfile />}></Route>
         </Route>
         <Route path="*" element={<Notdefine />}></Route>
